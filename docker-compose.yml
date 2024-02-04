@@ -1,0 +1,11 @@
+version: "3.8"
+
+name: "redis"
+services:
+  redis:
+    extends:
+      file: ./docker-compose-redis.yml
+      service: redis
+
+volumes:
+  redis_data:
